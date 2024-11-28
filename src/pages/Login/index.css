@@ -1,0 +1,111 @@
+/* Reset básico */
+*, *:before, *:after { 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+  margin: 10px;
+  background-color: #f7f7f7; /* Fundo neutro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.content {
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid rgba(147, 184, 189, 0.8);
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px rgba(168, 168, 168, 0.6);
+}
+
+/* Cabeçalho do formulário */
+h1 {
+  font-size: 36px;
+  color: #066a75;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: linear-gradient(to right, rgba(147, 184, 189, 0), rgba(147, 184, 189, 0.8), rgba(147, 184, 189, 1), rgba(147, 184, 189, 0.8), rgba(147, 184, 189, 0));
+}
+
+/* Parágrafo e rótulos */
+p {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #405c60;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px rgba(168, 168, 168, 0.6) inset;
+  transition: all 0.2s linear;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3d9db3;
+  outline: none;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #3d9db3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0px 1px 1px #333;
+  transition: background 0.2s linear;
+}
+
+input[type="submit"]:hover {
+  background: #4ab3c6;
+}
+
+/* Link adicional (opcional) */
+.link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link a {
+  color: #3d9db3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link a:hover {
+  color: #4ab3c6;
+}
